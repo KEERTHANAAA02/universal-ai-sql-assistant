@@ -2,21 +2,6 @@
 
 This project converts normal English questions into SQL queries using Ollama + Llama 3.2 and shows the result in Streamlit.
 
-## What is upgraded?
-
-Earlier, the app worked only with two fixed tables: `customers` and `orders`.
-
-Now it can:
-
-- Use the sample database
-- Upload any CSV file and convert it into a SQL table
-- Upload multiple CSV files
-- Automatically read table names and column names
-- Generate SQL based on the actual database schema
-- Connect to real databases using SQLAlchemy connection URLs
-- Block unsafe SQL like DELETE, DROP, INSERT, UPDATE
-- Show the generated SQL and result table
-
 ## Simple explanation
 
 User asks in English:
@@ -90,6 +75,3 @@ company.db
 
 Important: Use a read-only database user for safety.
 
-## Viva one-line answer
-
-This upgraded project is a universal AI SQL assistant that can read any uploaded CSV or connected database schema, convert English questions into SQL queries, execute only safe read-only queries, and display the answer in a Streamlit web app.
